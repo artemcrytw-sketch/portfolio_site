@@ -1,74 +1,109 @@
-/* Общие стили для всех страниц */
+/* Базовые настройки */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* цвет фона всех страниц */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f7f6; /* Светло-серый фон */
     color: #333;
-    margin: 20px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-/* Цвет всех заголовков */
+/* Центрируем весь контент на странице */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #ffffff; /* Белая карточка для контента */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Легкая тень */
+}
+
+/* Цвет заголовков */
 h1, h2 {
     color: #1a5f7a;
+    margin-top: 0;
 }
 
-/* Логотип в левом верхнем углу */
+/* Линия-разделитель */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 30px 0;
+}
+
+/* Логотип */
 .logo {
     width: 60px;
     height: auto;
-    display: block;
-    margin-bottom: 10px;
+    border-radius: 50%; /* Делает логотип круглым (если картинка квадратная) */
 }
 
-/* Анимация пульсации для главного заголовка (требование HTML2) */
+/* Главная картинка (аватар) */
+.avatar {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+    display: block;
+}
+
+/* Картинка справа от текста на странице "Работы" */
+.float-right {
+    float: right;
+    margin: 0 0 15px 25px;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Таблица */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Ссылки */
+a {
+    color: #006699;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+/* Анимация (требование задания) */
 .main-title {
     animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
     0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
+    50% { transform: scale(1.03); color: #2c8caf; }
     100% { transform: scale(1); }
 }
 
-/* Картинка на главной */
-.avatar {
-    max-width: 200px;
-    height: auto;
-    display: block;
-    margin: 15px 0;
-}
-
-/* Таблица */
-table {
-    border-collapse: collapse;
-    margin: 15px 0;
-}
-
-td {
-    padding: 8px;
-}
-
-/* Страница 1: фоновое изображение для body */
+/* Фоновая картинка для страницы 1.html */
 .bg-page {
     background-image: url('images/bg.jpg');
     background-size: cover;
     background-attachment: fixed;
-    background-color: #e8f4f8; /* запасной цвет, если картинка не загрузится */
 }
-
-/* Обтекание картинки текстом справа (требование HTML2) */
-.float-right {
-    float: right;
-    margin: 0 0 10px 20px;
-    max-width: 250px;
-    height: auto;
-}
-
-/* Ссылки */
-a {
-    color: #006699;
-}
-
-a:hover {
-    color: #ff6600;
+.bg-page .container {
+    background-color: rgba(255, 255, 255, 0.95); /* Полупрозрачный белый фон, чтобы текст читался */
 }
