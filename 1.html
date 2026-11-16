@@ -1,44 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Моё портфолио — Работы</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мои работы</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-page">
-
+<body class="works-page">
 <div class="container">
-    <a href="index.html">
-        <img src="images/logo.png" alt="На главную" class="logo">
-    </a>
-
-
-    <nav class="site-nav">
-        <a href="index.html">Главная</a>
-        <a href="1.html">Мои работы</a>
-        <a href="2.html">Контакты</a>
-        <a href="3.html">О сайте</a>
-    </nav>
-
-    <h1>Мои работы и документы</h1>
-
-    <div class="image-text">
-        <img src="images/work.jpg" alt="Ноутбук с открытым редактором кода на рабочем столе" class="work-image">
-        <div class="side-text">
-            <p>Здесь собраны примеры учебных материалов и файлов. Их можно открыть или скачать, чтобы посмотреть разные форматы документов.</p>
-            <h2>Документы для скачивания</h2>
-            <ul>
-                <li><a href="files/resume.pdf" target="_blank">📄 Пример резюме (PDF)</a></li>
-                <li><a href="files/report.docx" download>📝 Учебный отчёт (DOCX)</a></li>
-                <li><a href="files/skills.xlsx" download>📊 Таблица навыков (XLSX)</a></li>
-                <li><a href="images/work.jpg" target="_blank">🖼️ Фотография рабочего места (JPG)</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <hr>
-    <p><a href="index.html">← Вернуться на главную</a></p>
+<header><a href="index.html" class="logo-link"><img src="images/logo.png" alt="Логотип — перейти на главную" class="logo"></a><nav class="site-nav">
+<a href="index.html">Главная</a>
+<a href="1.html">Мои работы</a>
+<a href="2.html">Контакты</a>
+<a href="3.html">О сайте</a>
+</nav></header>
+<main>
+<h1>Мои работы</h1>
+<div class="image-text work-intro">
+<img src="images/work.jpg" alt="Ноутбук с открытым редактором кода на рабочем столе" class="work-image">
+<div class="side-text"><h2>Учебные материалы</h2><p>Здесь собраны примеры документов и материалов, которые можно открыть или скачать. По мере обучения раздел будет пополняться новыми работами.</p><p>Файлы представлены в разных форматах, чтобы их было удобно просматривать и использовать.</p></div>
 </div>
-
+<h2>Документы для скачивания</h2>
+<ul class="file-list">
+<li><a href="files/resume.pdf" download>Резюме — PDF</a></li>
+<li><a href="files/report.docx" download>Учебный отчёт — DOCX</a></li>
+<li><a href="files/materials.xlsx" download>Таблица навыков — XLSX</a></li>
+<li><a href="images/work.jpg" download>Фотография рабочего места — JPG</a></li>
+</ul>
+</main><footer>Учебное портфолио · 2026</footer>
+</div>
 </body>
 </html>

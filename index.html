@@ -1,73 +1,32 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Моё портфолио — Главная</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Моё портфолио</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-
+<body class="">
 <div class="container">
-    <a href="index.html">
-        <img src="images/logo.png" alt="На главную" class="logo">
-    </a>
-
-
-    <nav class="site-nav">
-        <a href="index.html">Главная</a>
-        <a href="1.html">Мои работы</a>
-        <a href="2.html">Контакты</a>
-        <a href="3.html">О сайте</a>
-    </nav>
-
-    <h1 class="main-title">Привет, это моё портфолио</h1>
-
-    <p>
-        <font face="Arial" color="#2c3e50" size="3">
-            Я учусь и постепенно собираю здесь свои учебные проекты. Этот сайт создан как часть лабораторной работы и знакомит посетителей с моими работами, навыками и контактами.
-        </font>
-    </p>
-
-    <p>
-        Здесь будут появляться мои работы: рефераты, презентации, небольшие исследования. Раздел будет пополняться новыми материалами по мере учёбы.
-    </p>
-
-    <p style="text-align: center; font-style: italic; color: #666;">
-        Спасибо, что заглянули. Если хотите связаться — переходите на страницу «Контакты».
-    </p>
-
-    <img src="images/avatar.jpg" alt="Студент работает за ноутбуком в учебном пространстве" class="avatar">
-
-
-    <h2>Рабочее пространство</h2>
-    <p>Небольшая анимация моего рабочего места и процесса создания проектов.</p>
-    <img src="images/portfolio-workspace.gif"
-         alt="Анимированное рабочее место с ноутбуком и редактором кода"
-         class="portfolio-gif">
-
-    <h2>Мои навыки</h2>
-    <table>
-        <tr>
-            <td><b>Навык</b></td>
-            <td><b>Уровень</b></td>
-        </tr>
-        <tr>
-            <td>HTML / CSS (базовый)</td>
-            <td>Начальный</td>
-        </tr>
-        <tr>
-            <td>Работа с документами</td>
-            <td>Уверенный</td>
-        </tr>
-    </table>
-
-    <hr>
-
-    <p style="text-align: center;">
-        <a href="1.html">📁 Мои работы</a> &nbsp;|&nbsp;
-        <a href="2.html">📞 Контакты</a>
-    </p>
+<header><a href="index.html" class="logo-link"><img src="images/logo.png" alt="Логотип — перейти на главную" class="logo"></a><nav class="site-nav">
+<a href="index.html">Главная</a>
+<a href="1.html">Мои работы</a>
+<a href="2.html">Контакты</a>
+<a href="3.html">О сайте</a>
+</nav></header>
+<main>
+<h1>Моё портфолио</h1>
+<p class="lead">Привет! Это небольшое портфолио, в котором собраны мои учебные работы, навыки и информация обо мне.</p>
+<div class="intro image-text">
+<img src="images/avatar.jpg" alt="Студент работает за ноутбуком" class="work-image">
+<div class="side-text"><h2>Немного обо мне</h2><p>Я учусь и постепенно осваиваю новые технологии. Здесь я собираю выполненные задания, проекты и полезные материалы.</p><p>Сайт создан в рамках учебной работы по HTML и CSS. Его страницы оформлены в едином стиле.</p><a class="text-link" href="1.html">Посмотреть мои работы →</a></div>
 </div>
-
+<h2>Рабочее пространство</h2>
+<p>Небольшая GIF-анимация рабочего места.</p>
+<img src="images/portfolio-workspace.gif" alt="Анимация рабочего места с ноутбуком" class="portfolio-gif">
+<h2>Мои навыки</h2>
+<table><tr><th>Навык</th><th>Уровень</th></tr><tr><td>HTML и CSS</td><td>Начальный</td></tr><tr><td>Работа с документами</td><td>Уверенный</td></tr><tr><td>Подготовка презентаций</td><td>Базовый</td></tr></table>
+</main><footer>Учебное портфолио · 2026</footer>
+</div>
 </body>
 </html>

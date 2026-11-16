@@ -1,167 +1,66 @@
-/* Базовые настройки */
+/* Общие настройки сайта */
+* { box-sizing: border-box; }
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #f4f7f6; /* Светло-серый фон */
-    color: #333;
     margin: 0;
-    padding: 0;
+    padding: 24px;
+    font-family: Arial, sans-serif;
+    color: #30383d;
+    background: #f3f5f5;
     line-height: 1.6;
 }
-
-/* Центрируем весь контент на странице */
 .container {
-    max-width: 800px;
-    margin: 30px auto;
-    background-color: #ffffff; /* Белая карточка для контента */
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Легкая тень */
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 28px 36px;
+    background: #ffffff;
+    border: 1px solid #e2e7e7;
 }
-
-/* Цвет заголовков */
-h1, h2 {
-    color: #1a5f7a;
-    margin-top: 0;
-}
-
-/* Линия-разделитель */
-hr {
-    border: 0;
-    height: 1px;
-    background: #ddd;
-    margin: 30px 0;
-}
-
-/* Логотип */
-.logo {
-    width: 60px;
-    height: auto;
-    border-radius: 50%; /* Делает логотип круглым (если картинка квадратная) */
-}
-
-/* Главная картинка (аватар) */
-.avatar {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin: 20px 0;
-    display: block;
-}
-
-/* Картинка слева, текст справа — требование задания */
-.image-text {
-    display: flex;
-    align-items: flex-start;
-    gap: 25px;
-    margin: 20px 0;
-}
-
-.work-image {
-    display: block;
-    width: 38%;
-    max-width: 250px;
-    height: auto;
-    border-radius: 8px;
-}
-
-.side-text {
-    flex: 1;
-}
-.side-text p:first-child {
-    margin-top: 0;
-}
-
-/* Единая навигация на всех страницах */
+header { display: block; }
+.logo-link { display: inline-block; }
+.logo { width: 54px; height: 54px; object-fit: contain; display: block; }
 .site-nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 18px;
-    margin: 18px 0 28px;
+    gap: 22px;
+    margin: 18px 0 30px;
     padding: 12px 0;
-    border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e9e9;
+    border-bottom: 1px solid #e5e9e9;
 }
-.site-nav a {
-    display: inline-block;
-}
-
-/* Таблица */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background-color: #fff;
-}
-
-td {
-    padding: 12px;
-    border: 1px solid #ddd;
-    text-align: left;
-}
-
-tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-/* Ссылки */
-a {
-    color: #006699;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    color: #ff6600;
-    text-decoration: underline;
-}
-
-/* Анимация (требование задания) */
-.main-title {
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.03); color: #2c8caf; }
-    100% { transform: scale(1); }
-}
-
-/* Фоновая картинка для страницы 1.html */
-.bg-page {
-    background-image: url('images/bg.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-}
-.bg-page .container {
-    background-color: rgba(255, 255, 255, 0.95); /* Полупрозрачный белый фон, чтобы текст читался */
-}
-
-
-/* GIF-анимация рабочего пространства в портфолио */
-.portfolio-gif {
-    display: block;
-    width: 100%;
-    max-width: 640px;
-    height: auto;
-    margin: 20px auto 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-}
-
-
-/* Чтобы блок с картинкой и текстом правильно выглядел на телефонах */
-@media (max-width: 600px) {
-    .container {
-        margin: 12px;
-        padding: 20px;
-    }
-
-    .image-text {
-        flex-direction: column;
-    }
-
-    .work-image {
-        width: 100%;
-        max-width: 100%;
-    }
+a { color: #326b78; text-decoration: none; }
+a:hover { color: #1d4c57; text-decoration: underline; }
+.site-nav a { font-weight: bold; }
+h1, h2 { color: #285b68; line-height: 1.3; }
+h1 { margin: 0 0 16px; font-size: 30px; }
+h2 { margin-top: 28px; font-size: 21px; }
+p { margin: 12px 0; }
+.lead { font-size: 18px; color: #59666b; }
+.image-text { display: flex; align-items: flex-start; gap: 24px; margin: 24px 0; }
+.work-image { display: block; width: 38%; max-width: 290px; height: auto; border-radius: 4px; }
+.side-text { flex: 1; }
+.side-text h2 { margin-top: 0; }
+.text-link { display: inline-block; margin-top: 8px; font-weight: bold; }
+.portfolio-gif { display: block; width: 100%; max-width: 560px; height: auto; margin: 18px auto 28px; }
+table { width: 100%; border-collapse: collapse; margin: 16px 0 26px; }
+th, td { padding: 10px 12px; border: 1px solid #dfe5e5; text-align: left; }
+th { background: #edf3f3; color: #285b68; }
+.file-list { padding-left: 22px; }
+.file-list li { margin: 10px 0; }
+.contact-card { padding: 18px 22px; background: #f5f8f8; border-left: 3px solid #6c9ba4; }
+.note { color: #778186; font-size: 14px; }
+footer { margin-top: 34px; padding-top: 14px; border-top: 1px solid #e5e9e9; color: #7b8589; font-size: 13px; text-align: center; }
+/* Небольшая анимация заголовка */
+h1 { animation: appear 0.7s ease-out; }
+@keyframes appear { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+/* Фоновая картинка на странице «О сайте» */
+.about-page { background: #263238 url('images/bg.jpg') center center / cover fixed; }
+.about-page .container { background: rgba(255,255,255,0.94); }
+.about-panel { max-width: 680px; padding: 18px 22px; background: #ffffff; }
+@media (max-width: 620px) {
+    body { padding: 10px; }
+    .container { padding: 20px 16px; }
+    .site-nav { gap: 12px; }
+    .image-text { flex-direction: column; }
+    .work-image { width: 100%; max-width: 100%; }
+    h1 { font-size: 25px; }
 }
