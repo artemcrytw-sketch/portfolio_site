@@ -107,3 +107,15 @@ a:hover {
 .bg-page .container {
     background-color: rgba(255, 255, 255, 0.95); /* Полупрозрачный белый фон, чтобы текст читался */
 }
+
+
+/* GIF-анимация рабочего пространства в портфолио */
+.portfolio-gif {
+    display: block;
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    margin: 20px auto 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
