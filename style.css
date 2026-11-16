@@ -48,13 +48,41 @@ hr {
     display: block;
 }
 
-/* Картинка справа от текста на странице "Работы" */
-.float-right {
-    float: right;
-    margin: 0 0 15px 25px;
+/* Картинка слева, текст справа — требование задания */
+.image-text {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin: 20px 0;
+}
+
+.work-image {
+    display: block;
+    width: 38%;
     max-width: 250px;
     height: auto;
     border-radius: 8px;
+}
+
+.side-text {
+    flex: 1;
+}
+.side-text p:first-child {
+    margin-top: 0;
+}
+
+/* Единая навигация на всех страницах */
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: 18px 0 28px;
+    padding: 12px 0;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+.site-nav a {
+    display: inline-block;
 }
 
 /* Таблица */
@@ -118,4 +146,22 @@ a:hover {
     margin: 20px auto 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Чтобы блок с картинкой и текстом правильно выглядел на телефонах */
+@media (max-width: 600px) {
+    .container {
+        margin: 12px;
+        padding: 20px;
+    }
+
+    .image-text {
+        flex-direction: column;
+    }
+
+    .work-image {
+        width: 100%;
+        max-width: 100%;
+    }
 }
